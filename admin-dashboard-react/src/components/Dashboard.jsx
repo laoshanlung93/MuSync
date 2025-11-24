@@ -118,7 +118,7 @@ function Dashboard({ streamerId, apiUrl, onLogout }) {
       <header className="dashboard-header">
         <div>
           <h1>🎧 Personal Mixer</h1>
-          <p className="channel-name">Channel: {streamerId}</p>
+          <p className="channel-name">Channel ID: {streamerId}</p>
         </div>
         <button onClick={onLogout} className="btn-logout">
           Logout

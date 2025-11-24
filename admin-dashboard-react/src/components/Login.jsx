@@ -2,12 +2,12 @@ import { useState } from 'react';
 import './Login.css';
 
 function Login({ onLogin }) {
-  const [channelName, setChannelName] = useState('');
+  const [channelId, setChannelId] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (channelName.trim()) {
-      onLogin(channelName.toLowerCase().trim());
+    if (channelId.trim()) {
+      onLogin(channelId.trim());
     }
   };
 
@@ -19,16 +19,16 @@ function Login({ onLogin }) {
         
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Twitch Channel Name</label>
+            <label>Twitch Channel ID</label>
             <input
               type="text"
-              value={channelName}
-              onChange={(e) => setChannelName(e.target.value)}
-              placeholder="your_channel_name"
+              value={channelId}
+              onChange={(e) => setChannelId(e.target.value)}
+              placeholder="88643587"
               required
               autoFocus
             />
-            <small>Enter your Twitch channel name to manage your music</small>
+            <small>Find your Channel ID at <a href="https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/" target="_blank" rel="noopener noreferrer" style={{color: '#00d9ff'}}>this tool</a></small>
           </div>
           <button type="submit">Continue</button>
         </form>
