@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 const TRACK = {
   id: 'example_01',
   url: 'https://laoshanlung93.github.io/MuSync/audio/test.mp3', // Replace with your CDN URL
-  duration: 120.0 // Track length in seconds
+  duration: 327.0 // Track length in seconds
 };
 
 
