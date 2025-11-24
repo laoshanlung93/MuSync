@@ -1,0 +1,11 @@
+{
+  "tracks": [
+    {
+      "id": "example_01",
+      "name": "Example Track 1",
+      "url": "https://laoshanlung93.github.io/MuSync/audio/test.mp3",
+      "duration": 120.0
+    }
+  ],
+  "currentTrackId": "example_01"
+}

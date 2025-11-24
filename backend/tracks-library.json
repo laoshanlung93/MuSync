@@ -1,0 +1,22 @@
+{
+  "tracks": [
+    {
+      "id": "track_001",
+      "name": "Chill Vibes",
+      "artist": "Your Name",
+      "url": "https://laoshanlung93.github.io/MuSync/audio/track1.mp3",
+      "duration": 180.0,
+      "genre": "Lofi",
+      "tags": ["chill", "relaxing", "study"]
+    },
+    {
+      "id": "track_002",
+      "name": "Upbeat Energy",
+      "artist": "Your Name",
+      "url": "https://laoshanlung93.github.io/MuSync/audio/track2.mp3",
+      "duration": 150.0,
+      "genre": "Electronic",
+      "tags": ["energetic", "gaming", "upbeat"]
+    }
+  ]
+}

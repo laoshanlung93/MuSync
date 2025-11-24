@@ -1,0 +1,64 @@
+.library-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.genre-select {
+  width: 200px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.genre-select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.library-tracks {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.library-track {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.library-track:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.library-track-info {
+  flex: 1;
+}
+
+.library-track-name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.library-track-meta {
+  font-size: 12px;
+  color: #a8a8b8;
+}
+
+.btn-add {
+  background: linear-gradient(135deg, #51cf66 0%, #37b24d 100%);
+}

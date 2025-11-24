@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "name": "Personal Mixer",
+  "description": "Synced music player for Twitch streams",
+  "author": "Your Name",
+  "panel": {
+    "viewer_url": "panel.html",
+    "height": 300
+  },
+  "video_overlay": {
+    "viewer_url": "overlay.html"
+  }
+}

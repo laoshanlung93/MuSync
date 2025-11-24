@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Mixer Overlay</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+</head>
+<body class="overlay">
+  <div class="overlay-container">
+    <div class="overlay-content">
+      <span class="overlay-icon">🎵</span>
+      <p id="track-name">Loading...</p>
+      <p id="timestamp">--:--</p>
+      <button id="play-btn">▶️ Play</button>
+      <div class="volume-control">
+        <span>🔊</span>
+        <input type="range" id="volume-slider" min="0" max="100" value="50">
+        <span id="volume-value">50%</span>
+      </div>
+    </div>
+  </div>
+  
+  <audio id="pm-audio" preload="auto"></audio>
+  
+  <script src="player.js"></script>
+</body>
+</html>
