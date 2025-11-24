@@ -120,10 +120,13 @@ app.get('/', (req, res) => {
 app.get('/status/:streamerId', (req, res) => {
   const { streamerId } = req.params;
   const data = loadStreamerData(streamerId);
-  const currentTrack = data.tracks.find(t => t.id === data.currentTrackId) || data.tracks[0];
+  const library = loadTracksLibrary();
+  
+  // Find current track in the library
+  const currentTrack = library.tracks.find(t => t.id === data.currentTrackId);
   
   if (!currentTrack) {
-    return res.status(404).json({ error: 'No tracks available for this streamer' });
+    return res.status(404).json({ error: 'No track currently playing for this streamer' });
   }
   
   const now = Date.now();
